@@ -10,26 +10,26 @@ APP PLANNING & DESIGN
 
 2. CORE FUNCTIONALITY
 -------------------------
-- What are the essential features your app must have?  
-- What optional features could make your app more interactive or personalized?
+- What are the essential features your app must have? It has to have a place to type data and also store that data to be called upon when needed
+- What optional features could make your app more interactive or personalized? If it kept data and encouraged people also if it was able to provied tips and tricks on weight loss
 
 3. SECRET OR PERSONALIZED CONTENT
 
 -------------------------
-- What content will users see after logging in?  
-- Will this content change depending on who is using the app (admin, user, special user?)
+- What content will users see after logging in?  They will see a welcome page and an inuput data page so they can input weight what they have eaten ect.
+- Will this content change depending on who is using the app (admin, user, special user?) Yes 
 
 4. USER EXPERIENCE (UX) DESIGN
 -------------------------
-- How should your app look and feel?
-- How will users navigate between pages?
+- How should your app look and feel? It should be brightish but also a freindly interface
+- How will users navigate between pages? With tabs at the top
 
 5. SECURITY FEATURES
 -------------------------
-- What password and authentication rules will you enforce?  
-- How will you protect secret pages from unauthorized access?
+- What password and authentication rules will you enforce?  We will make sure that MFA is a neccisity and that to make an account you will need spefic things for a passowrd
+- How will you protect secret pages from unauthorized access? Hopefull we will be able to provied encryption 
 
 6. OPTIONAL CREATIVE ENHANCEMENTS
 -------------------------
-- What customization or fun features could users enjoy?
-- Are there interactive elements, like games, quizzes, or badges, you could include?
+- What customization or fun features could users enjoy? They would mostlikle enjoy the comliments and tips 
+- Are there interactive elements, like games, quizzes, or badges, you could include? They dont have any games persay but you will get badges for every 10-15 pounds that you lose to encourgae you to loose weight
