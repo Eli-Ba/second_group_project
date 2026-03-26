@@ -4,9 +4,9 @@ APP PLANNING & DESIGN
 
 1. PROJECT NAME & THEME
 -------------------------
-- What is your app called, and what type of app is it?  
-- What style or vibe do you want users to experience?
-- What about your app will require a log-in structure?
+- What is your app called, and what type of app is it?  It is called workput and it stores work out data and meal plans
+- What style or vibe do you want users to experience? We want it to be simple to use but holds alot of data
+- What about your app will require a log-in structure? To be able to make sure that youare lgging inot an account that is specialed fo you
 
 2. CORE FUNCTIONALITY
 -------------------------
