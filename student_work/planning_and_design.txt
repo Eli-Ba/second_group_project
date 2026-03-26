@@ -4,9 +4,9 @@ APP PLANNING & DESIGN
 
 1. PROJECT NAME & THEME
 -------------------------
-- What is your app called, and what type of app is it?  It is called workput and it stores work out data and meal plans
+- What is your app called, NutriPlanr and what type of app is it?  It is called workput and it stores work out data and meal plans
 - What style or vibe do you want users to experience? We want it to be simple to use but holds alot of data
-- What about your app will require a log-in structure? To be able to make sure that youare lgging inot an account that is specialed fo you
+- What about your app will require a log-in structure? To be able to make sure that you are logging into an account that is specialed fo you
 
 2. CORE FUNCTIONALITY
 -------------------------
@@ -26,8 +26,8 @@ APP PLANNING & DESIGN
 
 5. SECURITY FEATURES
 -------------------------
-- What password and authentication rules will you enforce?  We will make sure that MFA is a neccisity and that to make an account you will need spefic things for a passowrd
-- How will you protect secret pages from unauthorized access? Hopefull we will be able to provied encryption 
+- What password and authentication rules will you enforce?  We will make sure that MFA is a neccisity and that to make an account you will need spefic things for a password
+- How will you protect secret pages from unauthorized access? Hopefull we will be able to provide encryption 
 
 6. OPTIONAL CREATIVE ENHANCEMENTS
 -------------------------
