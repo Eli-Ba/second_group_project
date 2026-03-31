@@ -92,7 +92,7 @@ secret_page = f"""{base_style}
 <div class="card">
 <h2>Nutriplanr </h2>
 <h3>Welcome, {{{{ username }}}}!</h3>
-<p>Are you ready to get fit!</p>
+<p>Lets get fit!</p>
 <a href="/logout"><button>Logout</button></a>
 </div>
 """
