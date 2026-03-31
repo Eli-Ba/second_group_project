@@ -79,6 +79,8 @@ register_page = f"""{base_style}
 <form method="POST">
   <input name="username" placeholder="Username"><br>
   <input name="password" type="password" placeholder="Password"><br>
+  <input name="weight" type="weight" placeholder="Weight"><br>
+  <input name="height" type="height" placeholder="Height"><br>
   <button type="submit">Sign Up</button>
 </form>
 <a href="/">Back to login</a>
