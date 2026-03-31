@@ -35,7 +35,7 @@ body {
     height: 100vh;
 }
 .card {
-    background: light_green;
+    background: green;
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
