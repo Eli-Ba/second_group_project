@@ -1,5 +1,6 @@
-from flask import Flask, request, redirect, url_for, render_template_string, session
+from flask import Flask, request, redirect, url_for, render_template_string, session  # type: ignore[import]
 import sqlite3
+import bcrypt
 
 app = Flask(__name__)
 app.secret_key = "supersecretkey"
@@ -132,17 +133,21 @@ def register():
         else:
             try:
                 conn = get_db()
+                hashed_pw = bcrypt.hashpw(password.encode("utf-8"), bcrypt.gensalt())
                 conn.execute(
                     "INSERT INTO users (username, password) VALUES (?, ?)",
-                    (username, password)
+                    (username, hashed_pw)
                 )
                 conn.commit()
                 conn.close()
                 return redirect(url_for("login"))
             except sqlite3.IntegrityError:
                 error = "Username already exists"
+            except Exception as e:  # Optional: Catch other potential errors, like hashing failures
+                error = f"An error occurred: {str(e)}"
 
     return render_template_string(register_page, error=error)
+
 
 @app.route("/secret")
 def secret():
