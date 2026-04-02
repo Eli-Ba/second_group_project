@@ -97,7 +97,8 @@ register_page = f"""{base_style}
     <input type="checkbox" id="gluten" name="allergies[]" value="gluten">
     <label for="gluten">Gluten</label>
   </div>
-</form>
+
+  </form>
   <select name="diet" required>
     <option value="all_foods">All foods</option>
     <option value="vegan">Vegan</option>
