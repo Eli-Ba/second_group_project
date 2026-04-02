@@ -104,8 +104,6 @@ register_page = f"""{base_style}
     <input type="checkbox" id="gluten" name="allergies[]" value="gluten">
     <label for="gluten">Gluten</label>
   </div>
-  <br>
-  <input type="submit" value="Submit Allergies">
 </form>
 </select><br>
   <input name="weight" type="number" step="0.1" placeholder="Weight (kg/lbs)" required><br>
