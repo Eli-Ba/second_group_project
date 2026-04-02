@@ -80,6 +80,12 @@ register_page = f"""{base_style}
 <form method="POST">
   <input name="username" placeholder="Username"><br>
   <input name="password" type="password" placeholder="Password"><br>
+  <select name="gender" required>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="other">Other</option>
+    <option value="prefer_not_to_say">Prefer not to say</option>
+</select><br>
   <input name="weight" type="number" step="0.1" placeholder="Weight (kg/lbs)" required><br>
   <input name="height" type="number" step="0.1" placeholder="Height (cm/in)" required><br>
   <button type="submit">Sign Up</button>
