@@ -90,6 +90,23 @@ register_page = f"""{base_style}
     <option value="vegan">Vegan</option>
     <option value="vegetarian">Vegetarian</option>
     <option value="other">Other</option>
+    <form action="/submit-allergies" method="post">
+  <p>Select all that apply:</p>
+  <div>
+    <input type="checkbox" id="peanut" name="allergies[]" value="peanut">
+    <label for="peanut">Peanuts</label>
+  </div>
+  <div>
+    <input type="checkbox" id="dairy" name="allergies[]" value="dairy">
+    <label for="dairy">Dairy</label>
+  </div>
+  <div>
+    <input type="checkbox" id="gluten" name="allergies[]" value="gluten">
+    <label for="gluten">Gluten</label>
+  </div>
+  <br>
+  <input type="submit" value="Submit Allergies">
+</form>
 </select><br>
   <input name="weight" type="number" step="0.1" placeholder="Weight (kg/lbs)" required><br>
   <input name="height" type="number" step="0.1" placeholder="Height (cm/in)" required><br>
