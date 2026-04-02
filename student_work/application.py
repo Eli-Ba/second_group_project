@@ -76,40 +76,48 @@ login_page = f"""{base_style}
 
 register_page = f"""{base_style}
 <div class="card">
-<h2>Register</h2>
-<form method="POST">
-  <input name="username" placeholder="Username"><br>
-  <input name="password" type="password" placeholder="Password"><br>
-  <select name="gender" required>
-    <option value="male">Male</option>
-    <option value="female">Female</option>
-    <option value="other">Other</option>
-    <option value="prefer_not_to_say">Prefer not to say</option>
+  <h2>Register</h2>
+  <form method="POST">
+    <input name="username" placeholder="Username"><br>
+    <input name="password" type="password" placeholder="Password"><br>
+    
+    <label for="gender">Gender:</label><br>
+    <select name="gender" required>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+      <option value="prefer_not_to_say">Prefer not to say</option>
+    </select><br><br>
+    
+    <label>Allergies:</label><br>
     <div>
-    <input type="checkbox" id="peanut" name="allergies[]" value="peanut">
-    <label for="peanut">Peanuts</label>
-  </div>
-  <div>
-    <input type="checkbox" id="dairy" name="allergies[]" value="dairy">
-    <label for="dairy">Dairy</label>
-  </div>
-  <div>
-    <input type="checkbox" id="gluten" name="allergies[]" value="gluten">
-    <label for="gluten">Gluten</label>
-  </div>
-  <select name="diet" required>
-    <option value="all_foods">All foods</option>
-    <option value="vegan">Vegan</option>
-    <option value="vegetarian">Vegetarian</option>
-    <option value="other">Other</option>
-    <form action="/submit-allergies" method="post">
-  <p>Select all that apply:</p>
-</select><br>
-  <input name="weight" type="number" step="0.1" placeholder="Weight (kg/lbs)" required><br>
-  <input name="height" type="number" step="0.1" placeholder="Height (cm/in)" required><br>
-  <button type="submit">Sign Up</button>
-<a href="/">Back to login</a>
-<p class="error">{{{{ error }}}}</p>
+      <input type="checkbox" id="peanut" name="allergies" value="peanut">
+      <label for="peanut">Peanuts</label>
+    </div>
+    <div>
+      <input type="checkbox" id="dairy" name="allergies" value="dairy">
+      <label for="dairy">Dairy</label>
+    </div>
+    <div>
+      <input type="checkbox" id="gluten" name="allergies" value="gluten">
+      <label for="gluten">Gluten</label>
+    </div><br>
+    
+    <label for="diet">Diet:</label><br>
+    <select name="diet" required>
+      <option value="all_foods">All foods</option>
+      <option value="vegan">Vegan</option>
+      <option value="vegetarian">Vegetarian</option>
+      <option value="other">Other</option>
+    </select><br><br>
+    
+    <input name="weight" type="number" step="0.1" placeholder="Weight (kg/lbs)" required><br>
+    <input name="height" type="number" step="0.1" placeholder="Height (cm/in)" required><br><br>
+    
+    <button type="submit">Sign Up</button><br>
+    <a href="/">Back to login</a>
+    <p class="error">{{ error }}</p>
+  </form>
 </div>
 """
 
