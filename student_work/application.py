@@ -75,7 +75,7 @@ body {
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    width: 1500px;
+    width: 1300px;
     height: 650px;
     text-align: center;
 }
