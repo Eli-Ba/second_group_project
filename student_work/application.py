@@ -60,7 +60,42 @@ button {
 }
 </style>
 """
-
+secondary_style = """
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #90EE90;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 600px;
+    height: 500px;
+    text-align: center;
+}
+input {
+    width: 90%;
+    padding: 8px;
+    margin: 8px 0;
+}
+button {
+    padding: 10px;
+    width: 60%;
+    background: #4CAF50;
+    color: white;
+    border: none;
+}
+.error {
+    color: red;
+}
+</style>
+"""
 login_page = f"""{base_style}
 <div class="card">
 <h2>Login</h2>
@@ -121,7 +156,7 @@ register_page = f"""{base_style}
 </div>
 """
 
-secret_page = f"""{base_style}
+secret_page = f"""{secondary_style}
 <div class="card">
 <h2>Nutriplanr </h2>
 <h3>Welcome, {{{{ username }}}}!</h3>
