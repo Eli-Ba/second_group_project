@@ -159,8 +159,8 @@ register_page = f"""{base_style}
 secret_page = f"""{secondary_style}
 <div class="card">
 <h1>Nutriplanr </h1>
-<h3>Welcome, {{{{ username }}}}!</h3>
-<p>Lets get fit!</p>
+<h2>Welcome, {{{{ username }}}}!</h2>
+<h6>"Lets get fit!</h6>
 <a href="/logout"><button>Logout</button></a>
 </div>
 """
