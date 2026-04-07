@@ -63,7 +63,7 @@ button {
 secondary_style = """
 <style>
 body {
-    font-family: Arial, sans-serif;
+    font-family: Comic_sans, sans-serif;
     background: #90EE90;
     display: flex;
     justify-content: center;
@@ -158,9 +158,9 @@ register_page = f"""{base_style}
 
 secret_page = f"""{secondary_style}
 <div class="card">
-<h1>Nutriplanr </h1>
-<h2>Welcome, {{{{ username }}}}!</h2>
-<h6>"Lets get fit!</h6>
+<h2>Nutriplanr </h2>
+<h3>Welcome, {{{{ username }}}}!</h3>
+<p>Lets get fit!</p>
 <a href="/logout"><button>Logout</button></a>
 </div>
 """
