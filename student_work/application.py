@@ -225,8 +225,8 @@ def secret():
         return redirect(url_for("login"))
     return render_template_string(secret_page, username=session["user"])
 
-@app.route("/route 1")
-def route 1():
+@app.route("/route_1")
+def route_1():
     if "user" not in session:
         return redirect(url_for("login"))
 
