@@ -162,7 +162,8 @@ secret_page = f"""{secondary_style}
 <h3>Welcome, {{{{ username }}}}!</h3>
 <p>Lets get fit!</p>
 
-<a href="/dashboard"><button>Go to Dashboard</button></a>
+<a href="/route 1"><button>route 1 </button></a>
+<a href="/route 2"><button>route 2 </button></a>
 
 <a href="/logout"><button>Logout</button></a>
 </div>
@@ -224,7 +225,24 @@ def secret():
         return redirect(url_for("login"))
     return render_template_string(secret_page, username=session["user"])
 
-@app.route("/dashboard")
+@app.route("/route 1")
+def route 1():
+    if "user" not in session:
+        return redirect(url_for("login"))
+
+    return render_template_string(f"""
+    {secondary_style}
+    <div class="card">
+        <p>..</p>
+
+        <a href="/profile"><button>Go to Profile</button></a>
+        <a href="/logout"><button>Logout</button></a>
+    </div>
+    """)
+    
+    
+@app.route("/route 2")
+
 def dashboard():
     if "user" not in session:
         return redirect(url_for("login"))
@@ -232,7 +250,7 @@ def dashboard():
     return render_template_string(f"""
     {secondary_style}
     <div class="card">
-        <p>This is your Workout Log</p>
+        <p>..</p>
 
         <a href="/profile"><button>Go to Profile</button></a>
         <a href="/logout"><button>Logout</button></a>
