@@ -162,8 +162,8 @@ secret_page = f"""{secondary_style}
 <h3>Welcome, {{{{ username }}}}!</h3>
 <p>Lets get fit!</p>
 
-<a href="/route 1"><button>route 1 </button></a>
-<a href="/route 2"><button>route 2 </button></a>
+<a href="/route_1"><button>route 1 </button></a>
+<a href="/route_2"><button>route 2 </button></a>
 
 <a href="/logout"><button>Logout</button></a>
 </div>
